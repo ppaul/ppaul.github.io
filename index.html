@@ -1,35 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <!-- Google Tag Manager -->
-    <script>
-      (function(w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
-        var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
-          dl = l != 'dataLayer' ? '&l=' + l : '';
-        j.async = true;
-        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-        f.parentNode.insertBefore(j, f);
-      })(window, document, 'script', 'dataLayer', 'GTM-N9QKWNP');
-    </script>
+   
     <!-- End Google Tag Manager -->
+    <script>
+      console.log('Sending a message');
+      window.postMessage('FRAME CONTENT LOADED');
+    </script>
   </head>
   <body>
     <!-- Google Tag Manager (noscript) -->
-    <noscript
-      ><iframe
-        src="https://www.googletagmanager.com/ns.html?id=GTM-N9QKWNP"
-        height="0"
-        width="0"
-        style="display:none;visibility:hidden"
-      ></iframe
-    ></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-    <h1>Welcome. We are testing google analytics, aka 'ga' on this site.</h1>
-    <h2>Here are some links you can click on:</h2>
-    <div><a href="#">This is an internal link</a></div>
-    <div></div><a href="http://www.google.com">Watchout, this is an external link</a></div>
+    <h1>Testing communication between iframe and parent page</h1>
+    
   </body>
 </html>
