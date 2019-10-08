@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        window.addEventListener("message", ({origin}) => console.log('Received message from ', origin));
+    </script>
+</head>
+<body>
+
+<h1>Iframe test</h1>
+
+<p>bellow is an iframe from ppaul.github.com</p>
+<iframe src="https://ppaul.github.com">
+</iframe>
+
+</body>
+</html>
